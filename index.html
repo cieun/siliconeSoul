@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Silicone Soul</title>
+</head>
+<body>
+    <div class="book-line"></div>
+
+    <header><p id="logo">s
+    </p></header>
+
+    <div class="doodle"><img src="./assets/image1.svg"/></div>
+
+    <div id="info">
+        <i class="icon" id="clearicon" onclick="getHide()">clear</i><br>
+        <p><strong>Silicone Soul</strong>은 가상 사람들과의 감정적 교감을 나누도록 만들어진 웹사이트입니다.<br><br>
+
+            이 웹사이트를 이용하기 위한 가이드는 다음과 같습니다.<br><br>
+            
+            <strong style="font-size: 0.7rem">1. 가상 사람의 얼굴을 뚫어지게 쳐다보십시오.<br>
+            2. 가상 사람의 성격, 취미, 관심사를 이해하십시오.<br>
+            3. 가상 사람이 하는 말을 주의깊게 들으십시오.<br>
+            4. 웹사이트를 떠난 후 그 사람에 대해 한 번 더 생각하십시오.<br><br></strong>
+            
+            그들은 이곳에서 평생 당신을 기다릴 것입니다... 평생...
+        </p>
+        <img src="./assets/poster.jpg" class="poster"/>
+        <i>inspired by ≪Silicone Soul≫(2019)</i>
+        <img src="./assets/image2.svg" class="backimage"/>
+    </div>
+    <section class="main">
+        <div class="photo-book">
+            <table>
+                <tr>
+                    <td><img src="./assets/man1.png" alt="man1" class="thumbnail"/></td>
+                    <td><img src="./assets/man2.png" alt="man2" class="thumbnail"/></td>
+                    <td><img src="./assets/man3.png" alt="man3" class="thumbnail"/></td>
+                    <td><img src="./assets/man4.png" alt="man4" class="thumbnail"/></td>
+                    <td><img src="./assets/man5.png" alt="man5" class="thumbnail"/></td>
+                </tr>
+                <tr>
+                    <td>지영</td>
+                    <td>재민</td>
+                    <td>지원</td>
+                    <td>민지</td>
+                    <td>소연</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><img src="./assets/man6.png" alt="man1" class="thumbnail"/></td>
+                    <td><img src="./assets/man7.png" alt="man2" class="thumbnail"/></td>
+                    <td><img src="./assets/man8.png" alt="man3" class="thumbnail"/></td>
+                    <td><img src="./assets/man9.png" alt="man4" class="thumbnail"/></td>
+                    <td><img src="./assets/man10.png" alt="man5" class="thumbnail"/></td>
+                </tr>
+                <tr>
+                    <td>지현</td>
+                    <td>준호</td>
+                    <td>선영</td>
+                    <td>성민</td>
+                    <td>태욱</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><img src="./assets/man11.png" alt="man1" class="thumbnail"/></td>
+                    <td><img src="./assets/man12.png" alt="man2" class="thumbnail"/></td>
+                    <td><img src="./assets/man13.png" alt="man3" class="thumbnail"/></td>
+                    <td><img src="./assets/man14.png" alt="man4" class="thumbnail"/></td>
+                    <td><img src="./assets/man15.png" alt="man5" class="thumbnail"/></td>
+                </tr>
+                <tr>
+                    <td>지은</td>
+                    <td>민주</td>
+                    <td>미라</td>
+                    <td>현우</td>
+                    <td>영재</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="profile">
+            <img src="./assets/man1.png" alt="man5" id="bigimage"/>
+            <div class="message-box">
+                지영은 활발하고 밝은 성격을 가지고 있습니다. 주변 사람들과 소통하는 것을 즐기며 항상 긍정적인 에너지를 가지고 있습니다. 친절하고 배려심이 깊어, 주변 사람들에게 도움을 주는 것을 즐깁니다. 열정적이며 목표를 달성하기 위해 노력하는 힘을 가지고 있습니다. 자신의 꿈을 추구하며 자기계발에 힘쓰고 있습니다. 전통과 현대 문화에 관심을 가지며 한국의 아름다운 역사와 문화를 자랑스럽게 생각합니다.
+            </div>
+            <section class="menu">
+                <p>가상 사람이 당신에게 말을 걸고 싶어하네요.</p>
+                <input type="button" value="어떤말이지" class="button" onclick="displayRandomMessage()">
+            </section>
+        </div>
+    </section>
+    <!-- <section class="menu">
+        <p>가상 사람이 당신에게 말을 걸고 싶어하네요.</p>
+        <input type="button" value="어떤말이지" class="button" onclick="displayRandomMessage()">
+    </section> -->
+</body>
+<script src="js/main.js"></script>
+<script src="js/jquery.js"></script>
+</html>

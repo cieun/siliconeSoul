@@ -1,0 +1,206 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+}
+
+p::-moz-selection {
+  background-color: black;
+  color: #00dde1;
+}
+
+p::selection {
+  background-color: black;
+  color: #00dde1;
+}
+
+td::-moz-selection {
+  background-color: black;
+  color: #00dde1;
+}
+
+td::selection {
+  background-color: black;
+  color: #00dde1;
+}
+
+.message-box::-moz-selection {
+  background-color: black;
+  color: #00dde1;
+}
+
+.message-box::selection {
+  background-color: black;
+  color: #00dde1;
+}
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+.book-line {
+  height: 100vh;
+  width: 1px;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  background: #F2F2F2;
+  box-shadow: 7px 0px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+header {
+  padding: 5px 50px 0 30px;
+  font-size: 2rem;
+  color: #E10029;
+  text-align: right;
+}
+header p {
+  font-family: "Prata", serif;
+  cursor: pointer;
+}
+header p:hover {
+  color: #00dde1;
+}
+
+.doodle {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  width: 350px;
+  height: 720px;
+}
+
+#info {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  color: #E10029;
+  font-size: 0.8em;
+  font-weight: 500;
+  background: url(../assets/paper.png);
+  background-size: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+#info .backimage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 300px;
+}
+#info .poster {
+  width: 120px;
+  display: flex;
+}
+#info p {
+  padding-right: 30px;
+  line-height: 1.5rem;
+}
+#info i {
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.icon {
+  font-family: "Material Icons";
+  font-style: normal;
+}
+
+#clearicon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.main {
+  margin-bottom: 50px;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.photo-book {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+.photo-book table {
+  border-spacing: 30px 10px;
+  font-size: 0.7rem;
+  color: #E10029;
+  margin-bottom: 70px;
+}
+.photo-book table:last-child {
+  margin-bottom: 0;
+}
+.photo-book table td {
+  text-align: center;
+}
+.photo-book table img {
+  width: 116px;
+  height: 160px;
+  cursor: pointer;
+}
+.photo-book table img:hover {
+  box-shadow: 0px 0px 10px 5px rgba(255, 0, 107, 0.14);
+}
+
+.profile {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile img {
+  width: 362px;
+  height: 500px;
+  margin-bottom: 60px;
+}
+.profile img:hover {
+  box-shadow: 0px 0px 30px 10px rgba(255, 0, 107, 0.14);
+}
+
+.message-box {
+  width: 450px;
+  height: 40px;
+  padding: 20px 10px 0 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 5px 4px 2px rgba(0, 0, 0, 0.25) inset;
+  background-color: #fff;
+  color: #E10029;
+  font-size: 0.8rem;
+  overflow-y: scroll;
+}
+
+.menu {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.menu p {
+  margin-bottom: 20px;
+  color: #E10029;
+  font-size: 0.8rem;
+}
+.menu .button {
+  width: 150px;
+  height: 45px;
+  padding: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.menu .button:hover {
+  background-color: #000;
+  color: #00dde1;
+}/*# sourceMappingURL=style.css.map */
